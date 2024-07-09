@@ -1,0 +1,57 @@
+#printOnly {
+    display: none;
+
+}
+
+@media print {
+
+    #printOnly,
+    .fot,
+    .kanan,
+    .row .col-sm-12 {
+        display: block !important;
+    }
+
+    .card {
+        border: 0;
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+
+    .dataTables_filter,
+    .dataTables_paginate,
+    .dataTables_info,
+    .dataTables_length,
+    .dataTables_ordering,
+    table.dataTable thead .sorting:after,
+    table.dataTable thead .sorting_asc:after,
+    table.dataTable thead .sorting_desc:after,
+    table.dataTable thead .sorting:before,
+    table.dataTable thead .sorting_asc:before,
+    table.dataTable thead .sorting_desc:before,
+
+    .breadcrumb,
+    .container,
+    .nav,
+    .navbar,
+    .no-print,
+    label,
+    #sidebar,
+    input[type="date"] {
+        display: none !important;
+    }
+
+    .tengah {
+        text-align: center;
+    }
+
+    .kanan {
+        text-align: right;
+    }
+
+    #namaPerusahaan {
+        text-align: center;
+        font-size: 40px;
+    }
+
+}
